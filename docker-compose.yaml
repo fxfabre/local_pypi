@@ -1,0 +1,10 @@
+services:
+
+  pypi_devpi:
+    container_name: pypi_devpi
+    build:
+      context: devpi
+    ports:
+      - "3141:3141"
+    volumes:
+      - ./devpi/.devpi_data:/root/.devpi
